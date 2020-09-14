@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72306b9eda71627015f409d1aacc153a",
+    "revision": "a9450cc5c9217eb5ab608ce735d077f7",
     "url": "/wikiheroes/index.html"
   },
   {
-    "revision": "566741c6f20d72fef8ad",
-    "url": "/wikiheroes/static/css/main.7563458b.chunk.css"
+    "revision": "2de47fbc723973615720",
+    "url": "/wikiheroes/static/css/main.6b7b1b5c.chunk.css"
   },
   {
     "revision": "48465469091a82ae687d",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wikiheroes/static/js/2.b63da1ec.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "566741c6f20d72fef8ad",
-    "url": "/wikiheroes/static/js/main.840e1b51.chunk.js"
+    "revision": "2de47fbc723973615720",
+    "url": "/wikiheroes/static/js/main.f063d8a3.chunk.js"
   },
   {
     "revision": "3ffce1ad1a4c16b56dcd",
     "url": "/wikiheroes/static/js/runtime-main.fe2c84f1.js"
+  },
+  {
+    "revision": "fc56c32c6f24f5cd5edc64f257829c13",
+    "url": "/wikiheroes/static/media/background.fc56c32c.jpg"
   },
   {
     "revision": "9ed60eb9157a2f6ebdfd8e997139b823",
