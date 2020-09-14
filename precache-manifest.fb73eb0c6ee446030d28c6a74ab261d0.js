@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9450cc5c9217eb5ab608ce735d077f7",
+    "revision": "c7c14a1d3b34fb487baf1bfc6268606a",
     "url": "/wikiheroes/index.html"
   },
   {
-    "revision": "2de47fbc723973615720",
-    "url": "/wikiheroes/static/css/main.6b7b1b5c.chunk.css"
+    "revision": "c05ea79adbc3f07f0c9b",
+    "url": "/wikiheroes/static/css/main.4d0d0912.chunk.css"
   },
   {
     "revision": "48465469091a82ae687d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wikiheroes/static/js/2.b63da1ec.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2de47fbc723973615720",
-    "url": "/wikiheroes/static/js/main.f063d8a3.chunk.js"
+    "revision": "c05ea79adbc3f07f0c9b",
+    "url": "/wikiheroes/static/js/main.81b0c3c2.chunk.js"
   },
   {
     "revision": "3ffce1ad1a4c16b56dcd",
