@@ -8,6 +8,11 @@ header {
     background-image: url(../imgs/background.jpg);
     background-size: cover;
     color: rgb(225, 225, 225);
+    margin: 0 auto;
+}
+
+.browseHeader {
+    background: none;
 }
 
 header h1 {

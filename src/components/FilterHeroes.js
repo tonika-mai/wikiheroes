@@ -69,7 +69,7 @@ export default function FilterHeroes() {
     return (
         <div className="pageContainer">
             <div className="top browseTop">
-                <header>
+                <header className="browseHeader">
                     <h1 className="browseTitle">FILTERS</h1>
                 </header>
             </div>
