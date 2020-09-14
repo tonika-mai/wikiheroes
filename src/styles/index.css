@@ -1,0 +1,190 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  width: 100%;
+  font-size: 10px;
+  font-family: 'Advent Pro', sans-serif;
+  background-color: rgb(27, 27, 27);
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+/* HEART BUTTON AND DRAWER */
+.drawer {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 250px;
+}
+
+.drawerHandle {
+  width: 250px;
+  height: 68px;
+  background-color: black;
+  background-image: url(../imgs/heart_big.png);
+  background-position-x: 6px;
+  background-position-y: 3px;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 35px;
+  transform: translateX(176px);
+  transition: transform 0.5s ease-in;
+}
+
+.drawerHandle:hover {
+  cursor: pointer;
+}
+
+.drawerHandle h3 {
+  padding-left: 80px;
+  color: rgb(225, 225, 225);
+  font-size: 2.5rem;
+  line-height: 68px;
+  margin: 0;
+}
+
+/* SLIDE MECHANISM */
+.drawerHandle.active, .drawerHandle.active + .favoritesContainer {
+  transform: translateX(0);
+}
+
+.drawerHandle.active {
+  border-radius: 0;
+}
+
+/* LIST */
+.favoritesContainer {
+  width: 250px;
+  min-height: 100px;
+  background-color: black;
+  position: absolute;
+  top: 68px;
+  right: 0px;
+  border-radius: 0 0 0 35px;
+  padding: 10px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  box-shadow: 4px 2px 3px black;
+  z-index: 1;
+  overflow-y: scroll;
+  max-height: 810px;
+}
+
+.favoritesContainer a {
+  width: 100%;
+}
+
+/* FAVORITE HERO */
+.favoritesCard {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 8px 10px;
+}
+
+.favoritesCard:last-of-type {
+  border-radius: 0 0 0 35px;
+}
+
+.favoritesCard:hover {
+  background-color: rgb(7, 7, 7);
+  color: white;
+}
+
+.favoritesCard img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.favoritesInfo {
+  color: rgb(225, 225, 225);
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+
+.favoritesInfo h4 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.favoritesInfo p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(10, 10, 10);
+  border: 1px solid rgb(5, 5, 5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(115, 115, 115);
+  border-radius: 5px;
+  border-right: 1px solid;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(200, 200, 200);
+}
+
+/* SPINNER */
+.spinnerContainer {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 16px solid rgb(225, 225, 225);
+  border-top: 16px solid rgb(87, 87, 87);
+  border-right: 16px solid rgb(144, 144, 144);
+  border-bottom: 16px solid rgb(202, 202, 202);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}

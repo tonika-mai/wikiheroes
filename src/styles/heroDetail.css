@@ -1,0 +1,120 @@
+.showAlignment {
+    height: 100%;
+    width: 100%;
+    padding: 70px 0;
+    background-attachment: fixed;
+}
+
+.heroDetailContainer {
+    width: 80%;
+    min-width: 730px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: 
+    "picture info"
+    "powerstats info";
+    background-color: rgb(20, 20, 20);
+    color: rgb(225, 225, 225);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 9px 11px 2px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.home {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(15, 15, 15);
+    padding: 5px;
+    border-radius: 0 20px 0;
+    outline: none;
+}
+
+.home:active {
+    padding-top: 8px;
+}
+
+.heroDetailContainer img {
+    grid-area: picture;
+    border-radius: 20px;
+    box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-width: 300px;
+
+}
+
+.heroDetailInfo h1 {
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-size: 6rem;
+    text-align: center;
+    margin: 15px 0 30px 0;
+}
+
+.heroDetailInfo {
+    grid-area: info;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.powerStatsContainer {
+    grid-area: powerstats;
+}
+
+.infoPair {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 20px 0;
+}
+
+.infoPair h3 {
+    flex: 1;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.infoPair p {
+    font-family: 'Special Elite', cursive;
+    flex: 1;
+    font-size: 2rem;
+    margin: 0;
+    line-height: 23px;
+}
+
+.powerstatBorder {
+    height: 35px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.powerstatBar {
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.powerstatIcon {
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.powerstatIcon:nth-child(5) {   /*fixing position battery icon*/
+    background-position-x: -6px;
+}
+
+@media screen and (max-width: 770px) {
+    .heroDetailContainer {
+        display: flex;
+        flex-flow: column wrap;
+        min-width: 450px;
+    }
+
+    .heroDetailContainer img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

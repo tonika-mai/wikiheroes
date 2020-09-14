@@ -1,0 +1,36 @@
+.heroCard {
+    background-color: black;
+    color: rgb(225, 225, 225);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    min-width: 180px;
+    position: relative;
+}
+
+.heroCard img{
+    width: 170px;
+    height: 227px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+
+.heroCard h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.heartButton {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    outline: none;
+    border-radius: 0 50% 0 50%;
+    background-color: black;
+}
+
+.heartButton:active {
+    transform: translateY(4px);
+}

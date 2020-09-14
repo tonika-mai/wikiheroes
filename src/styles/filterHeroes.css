@@ -1,0 +1,107 @@
+/* HEADER */
+.browseTop {
+    background-image: url(../imgs/browse.jpg);
+    background-size: contain;
+    background-repeat: round;
+    display: flex;
+    align-items: center;
+}
+
+.browseTitle {
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+/* BAR */
+.filtersBar {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    background-color: rgb(20, 20, 20);
+    color: rgb(115, 115, 115);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.filter {
+    margin: 0 40px;
+}
+
+.filterButton, .pageButton {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.filterButton {
+    height: 45px;
+    text-transform: uppercase;
+}
+
+.filterButton:hover, .pageButton:hover {
+    cursor: pointer;
+    color: rgb(225, 225, 225);
+}
+
+/* DROPDOWN MENU */
+.dropBtn::after {
+    content: "\0355";
+    display: inline-block;
+    transform: rotate(90deg);
+    position: absolute;
+    right: -20px;
+}
+
+.dropBtn {
+    position: relative;
+}
+
+.dropContent {
+    position: absolute;
+    min-width: 180px;
+    background-color: rgb(20, 20, 20);
+    display: none;
+    z-index: 1;
+}
+
+.dropdown:hover .dropContent {
+    display: block;
+}
+
+.dropContent button {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.dropContent button:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+/* RESULTS */
+.lighterContainer {
+    background-color: rgb(27, 27, 27);
+}
+
+/* PAGE BUTTONS */
+.pageButtonsContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.pageButton {
+    font-size: 3.3rem;
+    margin: 0px 7px;
+
+}
