@@ -5,7 +5,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 50px 0;
-    background-image: url(/static/media/background.fc56c32c.jpg);
+    background-image: url(../imgs/background.jpg);
     background-size: cover;
     color: rgb(225, 225, 225);
 }

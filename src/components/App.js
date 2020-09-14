@@ -15,6 +15,7 @@ export default function App() {
                     <FavoritesList />
                     <Switch>
                         <Route path="/" exact component={Homepage} />
+                        <Route path="/wikiheroes" exact component={Homepage} />
                         <Route path="/superheroes" exact component={FilterHeroes} />
                         <Route path="/superheroes/:id" component={HeroDetail} />
                     </Switch>
